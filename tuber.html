@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Site Title -->
+	<title>Justin Gaborit - Tuber</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS links -->
+    <link rel = "stylesheet" type = "text/css" href = "styles/bootstrap.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "styles/body.css">
+
+
+
+    
+</head>
+
+<body class = "background">
+
+	<a href="https://justingaborit.com/index.html">
+	<div class = "container col-md-6 col-sm-8 mt-5 pb-5">
+		<h1>Justin Gaborit</h1>
+		<h2>Programmer - Game Developer</h2>
+	</div>
+	</a>
+	
+	<div class = "container col-md-6 col-sm-8"><h3>TUBER</h3><hr class = "mb-4"></div>
+	<div class = "container content_body col-md-6 col-sm-8 mb-5">
+
+		<img class = "img-fluid game_banner" src="elements/images/tuberbanner.png">
+		
+		
+		<div class = "description_box_long">
+		<h5 class = "mt-3">Project description</h5><hr class = "custom">
+		<p>
+		Tuber is a randomly generated endless runner for Windows PC. The world that the player runs through is a tube, and it spins as the player moves across different surfaces. The player can also jump to avoid obstacles and enemies that traverse the world in unique and challenging ways.
+		</p>
+		</div>
+
+		<div class = "description_box_long">
+		<h5 class = "mt-3">Links and stats</h5><hr class = "custom">
+		<ul>
+			<li>Launched on windows PC</li>
+  			<li>450+ downloads between itch.io and gamejolt.com</li>
+  			<li>1000+ views and impressions</li>
+  			<li>100% average user score</li>
+		</ul>
+		<ul>
+  			<li>GameJolt download page: <a href="https://gamejolt.com/games/TUBER/600660">here</a></li>
+  			<li>itch.io download page: <a href="https://justingaborit.itch.io/tuber">here</a></li>
+		</ul>
+		</div>
+
+		<div class = "description_box_long container">
+		<h5 class = "right">World generation</h5><hr class = "custom">
+		<img style = "width:100rem;" class = "img-fluid" src="elements/tuber/tuber_run.gif">
+		<p class = "mt-3">
+			All of the biomes featured in Tuber are built off of a random level generation system.
+		</p>
+		<img style = "width:120rem;" class = "img-fluid" src="elements/tuber/tuber_diagram.png">
+		<p class = "mt-3">
+			This diagram outlines how level generation is triggered during gameplay. It works like so:
+		</p>
+		<ol start="1">
+  			<li>Player collides with level spawn trigger</li>
+  			<li>Level spawn trigger executes a script that selects a level segment</li>
+  			<li>New random level segment is instantiated and placed at spawn location</li>
+  			<li>Collision trigger and spawn location are destroyed</li>
+  			<li>Restart from step #1</li>
+		</ol>
+		<img style = "width:120rem;" class = "img-fluid" src="elements/tuber/collision_script.png">
+		<p class = "mt-3">
+			If we split the level generation system into two steps, the collision detection would be step #1.
+			The code snipet above checks to see if a game object called "PlayerObject" (the player) has collided 
+			with the trigger.
+		</p>
+		<img style = "width:120rem;" class = "img-fluid" src="elements/tuber/array_script.png">
+		<p class = "mt-3">
+			The code snipet bove, shows step #2 of the random generation system. 
+			The array works by pulling a series of premade level segments from a folder called "resources".
+			These level segments are then instantiated into the world.
+		</p>
+		</div>
+
+		<div class = "description_box_long container mt-4">
+		<h5 class = "right">Player orientation</h5><hr class = "custom">
+		<img style = "width:120rem;" class = "img-fluid" src="elements/tuber/orientation.gif">
+		<p class = "mt-3">
+			The player orientation is the second major limb of Tubers game design.
+			The orientation system allows the player to stick to the the surface
+			below them while navigating the game world.
+		</p>
+		<img style = "width:120rem;" class = "img-fluid" src="elements/tuber/orientation_script.png">
+		<p class = "mt-3">
+			First I establish a raycast and store the location and rotation information of
+			point in space where it collides with the floor, this is called the "Hit Info".
+			The rotation data from the hit info is then applied to the player characters rotation transfroms.
+			This, combined with a downward force designed to mimic gravity, allows the player to stick to any surface
+			they're standing on.
+		</p>
+		</div>
+
+		
+
+
+
+	</div>
+
+
+
+	</div>
+	</div>
+
+
+
+
+  	
+
+
+
+	<!--<div class = "container col-md-6 col-sm-8 mt-5 mb-5 content_body">
+		<p>test</p><br>
+			<p>test</p><br>
+				<p>test</p><br>
+	</div>
+
+<canvas>
+	<script src="scripts/index.js"></script>
+</canvas>-->
+
+
+
+</body>
+</html>

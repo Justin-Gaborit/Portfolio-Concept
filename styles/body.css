@@ -1,0 +1,199 @@
+  /*FONTS*/
+  @font-face
+  {
+    font-family: 'heavitas';
+    src: url('../fonts/heavitas/heavitas-webfont.woff2') format('woff2'),
+         url('../fonts/heavitas/heavitas-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face
+  {
+    font-family: 'comfortaa';
+    src: url('../fonts/comfortaa/comfortaa-bold-webfont.woff2') format('woff2'),
+         url('../fonts/comfortaa/comfortaa-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /*FONTS*/
+  h1
+  {
+    font-family: heavitas;
+    font-size: 5rem;
+    text-align: center;
+    background-image: url('../elements/images/TUBER_BannerGif_HD.gif');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  h2
+  {
+    font-family: heavitas;
+    font-size: 2rem;
+    text-align: center;
+    background-image: url('../elements/images/TUBER_BannerGif_HD.gif');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  h3
+  {
+    font-family: heavitas;
+    font-size: 2.5rem;
+    text-align: right;
+    color: white;
+  }
+
+  h4
+  {
+    font-family: comfortaa;
+    font-size: 2rem;
+    text-align: left;
+    color: white;
+  }
+
+  h5
+  {
+    font-family: comfortaa;
+    font-size: 1.5rem;
+    text-align: left;
+    color: white;
+  }
+
+  h5.right
+  {
+    font-family: comfortaa;
+    font-size: 1.5rem;
+    text-align: right;
+    color: white;
+  }
+
+  hr
+  {
+    color:#FCFCFC;
+    background-color: #FCFCFC;
+    border:2px solid #FCFCFC;
+    border-radius: 5px;
+  }
+
+  hr.custom
+  {
+    margin-top:0;
+    margin-bottom: .5rem;
+    color:#FCFCFC;
+    background-color: #FCFCFC;
+    border:2px solid #FCFCFC;
+    border-radius: 5px;
+  }
+
+  hr.profile
+  {
+    margin-top:-.5rem;
+    margin-bottom: .5rem;
+    color:#FCFCFC;
+    background-color: #FCFCFC;
+    border:2px solid #FCFCFC;
+    border-radius: 5px;
+  }
+
+  br
+  {
+    display: block;
+    content: "";
+  }
+
+  p
+  {
+    font-family: comfortaa;
+    font-size: 1.1rem;
+    color: white;
+  }
+
+  li
+  {
+    font-family: comfortaa;
+    font-size: 1.1rem;
+    color: white;
+  }
+
+  a {text-decoration: none}
+
+  /*IMAGES*/
+  .game_banner
+  {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: .5rem;
+    width:50rem;
+    height:auto;
+  }
+
+  .ww_icon
+  {
+    width:10rem;
+    height:10rem;
+  }
+
+  .test
+  {}
+
+  .test:hover .game_banner
+  {
+    opacity: 0.8;
+  }
+
+  /*Divs - Body Properties*/
+  .background
+  {
+    background-color: #000000; /*#272731*/
+  }
+
+  .content_body
+  {
+    border-radius: 5px;
+   /*background-color: grey;*/
+    display: block;
+    overflow: auto;
+  }
+
+  .description_box_container
+  {
+  }
+
+  .description_box
+  {
+    width: 50%;
+    float: left;
+    word-wrap: break-word
+  }
+
+  .description_box_long
+  {
+    word-wrap: break-word
+  }
+
+  .ww_box_container
+  {
+    height: 12rem;
+  }
+
+  .ww_image_box
+  {
+
+    width: 33%;
+    float: left;
+    word-wrap: break-word
+  }
+
+
+
+
+
+
