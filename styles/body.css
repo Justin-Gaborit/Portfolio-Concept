@@ -11,8 +11,8 @@
   @font-face
   {
     font-family: 'comfortaa';
-    src: url('../fonts/comfortaa/comfortaa-bold-webfont.woff2') format('woff2'),
-         url('../fonts/comfortaa/comfortaa-bold-webfont.woff') format('woff');
+    src: url('../fonts/Comfortaa/comfortaa-bold-webfont.woff2') format('woff2'),
+         url('../fonts/Comfortaa/comfortaa-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
@@ -186,7 +186,6 @@
 
   .ww_image_box
   {
-
     width: 33%;
     float: left;
     word-wrap: break-word
