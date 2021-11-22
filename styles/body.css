@@ -135,6 +135,21 @@
     height:auto;
   }
 
+  .applestore_icon
+  {
+    width:8rem;
+    height:auto;
+    float: right;
+    margin-right: 1em;
+  }
+
+  .googlestore_icon
+  {
+    width:8rem;
+    height:auto;
+    float: right;
+  }
+
   .ww_icon
   {
     width:10rem;
@@ -144,7 +159,17 @@
   .test
   {}
 
-  .test:hover .game_banner
+  .test:hover .game_banner 
+  {
+    opacity: 0.8;
+  }
+
+  .test:hover .applestore_icon
+  {
+    opacity: 0.8;
+  }
+
+  .test:hover .googlestore_icon
   {
     opacity: 0.8;
   }
