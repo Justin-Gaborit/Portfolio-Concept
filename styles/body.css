@@ -216,7 +216,72 @@
     word-wrap: break-word
   }
 
+  /*Linktree Overrides*/
+  .linktree_profile_image
+  {
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 13.5em;
+    border-radius: 100%;
+    height: auto;
+  }
 
+  .linktree_name_text
+  {
+    font-family: heavitas;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    margin-bottom: -.1em;
+  }
+
+  .linktree_email_text
+  {
+    font-family: comfortaa;
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 2em;
+  }
+
+  .btn
+  {
+    background-color: white;
+  }
+
+  .btn_text
+  {
+    margin-right: 3em;
+    font-family: comfortaa;
+    font-size: 1.4rem;
+    color: black;
+  }
+
+  .btn_section_box_1
+  {
+    width: 20%;
+    height: 2em;
+    float: left;
+    margin-left: 5;
+  }
+
+  .btn_section_box_2
+  {
+    width: 80%;
+    height: 2em;
+    float: left;
+    margin-left: 5;
+  }
+
+  .linktree_icons
+  {
+    align-content: center;
+    width: 2em;
+    height: auto;
+  }
 
 
 
